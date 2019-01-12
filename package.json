@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "browser":{
+    "child_process": false
+    },
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch",
