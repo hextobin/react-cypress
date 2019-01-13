@@ -5,7 +5,7 @@ describe('App initialization', () =>{
     cy.get('.todo-list li')
       cy.should('have.length', 4)
   })
-  it.only('Displays an error on failure', () => {
+  it('Displays an error on failure', () => {
     cy.server()
     cy.route({
       url: '/api/todos',
